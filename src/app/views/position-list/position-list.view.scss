@@ -13,13 +13,15 @@
         display: flex;
         justify-content: center;
         justify-items: center;
-        min-height: 100%;
+        height: 100%;
         padding-top: 80px;
+        overflow-y: auto;
         
     }
-
+    
     &__wapper{
         list-style: none;
         width: 50%;
+        padding-bottom: 26px;
     }
 }
