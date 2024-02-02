@@ -1,0 +1,25 @@
+:host {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: block;
+    
+
+}
+.position-list{
+    &__container{
+        
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        min-height: 100%;
+        padding-top: 80px;
+        
+    }
+
+    &__wapper{
+        list-style: none;
+        width: 50%;
+    }
+}

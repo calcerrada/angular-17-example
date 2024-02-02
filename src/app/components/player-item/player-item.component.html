@@ -1,0 +1,15 @@
+
+<!-- <li class="player-item" @enterItem> -->
+<li class="player-item" @enterItem>
+  <div class="player-item__name">
+    {{ player.name }}
+  </div>
+  <div class="player-item__gems">
+      <div class="player-item__gems-score">
+          {{ player.gems }}
+      </div>
+    <div class="player-item__gems-img" (click)="addGem()" [class.complete]="!this.player.pending">
+      <img src="../../../assets/images/gems.webp" alt="" />
+    </div>
+  </div>
+</li>

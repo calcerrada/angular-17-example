@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Nougat', sans-serif;
+  min-height: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-out {
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate-in {
+  from {
+    transform: rotate(-90deg);
+  }
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-name: fade-in, rotate-in;
+}
+::view-transition-old(root) {
+  animation-name: fade-out, rotate-out;
+}
+

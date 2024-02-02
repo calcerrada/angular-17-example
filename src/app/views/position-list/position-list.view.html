@@ -1,0 +1,10 @@
+<section class="position-list__container">
+  <ul class="position-list__wapper" [@listAnimation]="players.length">
+    @for (player of players; track player) {
+    <ss-player-item
+      [player]="player"
+      (addGems)="onAddGems($event)"
+    ></ss-player-item>
+    }
+  </ul>
+</section>
