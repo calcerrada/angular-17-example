@@ -20,4 +20,5 @@ export const appRoutes: Route[] = [
         (v) => v.StartComponent
       ),
   },
+  { path: '**', redirectTo: '' }
 ];
