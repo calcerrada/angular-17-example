@@ -7,11 +7,6 @@ export const  INITIAL_PLAYERS_DATA: Player[] = [
         pending: true
     },
     {
-        name: 'Noa',
-        gems: 0,
-        pending: true
-    },
-    {
         name: 'Lilith',
         gems: 0,
         pending: true
